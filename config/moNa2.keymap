@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define MOUSE 6
+#define SCROLL 5
 
 &mt {
     flavor = "balanced";
@@ -112,7 +113,7 @@
             >;
         };
 
-        layer_5 {
+        SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
