@@ -12,34 +12,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -82,12 +55,14 @@
 &kp PIPE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PLUS     &kp DOT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
 &kp LCTRL   &kp LEFT_GUI          &kp LEFT_ALT           &trans            &trans             &trans    &kp ENTER    &kp BACKSPACE                                            &kp RIGHT_SHIFT
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         MOUSE {
             bindings = <
 &kp ESCAPE                  &kp KP_NUMBER_7  &kp UP_ARROW    &kp KP_NUMBER_9  &kp PLUS                                   &kp CARET         &kp AMPERSAND      &mkp MB3        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB                     &kp LEFT_ARROW   &kp LG(RS(S))   &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1           &mo 3           &mkp MB2              &kp LA(PERCENT)
+&kp TAB                     &kp LEFT_ARROW   &kp LG(RS(S))   &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1           &mo 3           &mkp MB2              &kp LA(GRAVE)
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LC(SPACE)
 &kp LCTRL                   &trans           &trans          &trans           &trans        &trans       &kp ENTER       &kp BACKSPACE                                                              &kp PIPE
             >;
@@ -115,7 +90,7 @@
 
         layer5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&gresc  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
