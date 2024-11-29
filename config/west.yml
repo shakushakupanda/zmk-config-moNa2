@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/shakushakupanda    
   projects:
     - name: zmk
-      remote: shakushakupanda
+      remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
