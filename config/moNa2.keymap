@@ -30,13 +30,25 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 3 &tog_off 4 &tog_off 5>,
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
                 <&tog_on 3>;
 
             label = "BT1";
+        };
+        bt2: bt2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 2>,
+                <&macro_wait_time 500>,
+                <&tog_on 3>;
+
+            label = "BT2";
         };
     };
 
