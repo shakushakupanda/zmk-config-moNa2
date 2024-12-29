@@ -25,6 +25,19 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        bt1: bt1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 3 &tog_off 4 &tog_off 5>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>,
+                <&tog_on 3>;
+
+            label = "BT1";
+        };
     };
 
     behaviors {
@@ -49,14 +62,14 @@
             tap-ms = <20>;
         };
 
-         tog_on: toggle_layer_on_only {
+        tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer On";
             toggle-mode = "on";
         };
 
-         tog_off: toggle_layer_off_only {
+        tog_off: toggle_layer_off_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
@@ -70,14 +83,32 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                 &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                   &kp G                                  &kp MINUS      &kp H          &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                 &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 GRAVE  &lt 2 SPACE  &lt_to_layer_0 3 MINUS    &kp ENTER      &kp BACKSPACE                             &kp RIGHT_SHIFT
+&kp A             &kp S         &kp D         &kp F                   &kp G                                  &kp MINUS      &kp H          &kp J  &kp K      &kp L    &lt 4 SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                 &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 GRAVE  &lt 4 SPACE  &lt_to_layer_0 5 MINUS    &kp ENTER      &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
                 <&scroll_up_down>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        win_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+        };
+
+        ipad_layer {
+            bindings = <
+&kp A   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
         };
 
         NUM {
@@ -94,7 +125,7 @@
         MOUSE {
             bindings = <
 &kp ESCAPE                  &kp KP_NUMBER_7  &kp UP_ARROW    &kp KP_NUMBER_9  &kp PLUS                                   &kp CARET         &kp AMPERSAND      &mkp MB3        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB                     &kp LEFT_ARROW   &kp LG(RS(S))   &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1           &mo 3           &mkp MB2              &kp LA(GRAVE)
+&kp TAB                     &kp LEFT_ARROW   &kp LG(RS(S))   &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1           &mo 5           &mkp MB2              &kp LA(GRAVE)
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LC(SPACE)
 &kp LCTRL                   &trans           &trans          &trans           &trans        &trans       &kp ENTER       &kp BACKSPACE                                                              &kp PIPE
             >;
@@ -119,15 +150,6 @@
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
-            >;
-        };
-
-        layer5 {
-            bindings = <
-&kp A   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
 
