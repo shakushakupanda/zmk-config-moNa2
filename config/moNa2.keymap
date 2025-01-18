@@ -12,7 +12,7 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <300>;
 };
 
 / {
@@ -36,6 +36,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         tp_repeat_mo1: tp_repeat_mo1 {
             compatible = "zmk,behavior-hold-tap";
             label = "TP_REPEAT_MO1";
@@ -57,14 +58,14 @@
             tap-ms = <20>;
         };
 
-         tog_on: toggle_layer_on_only {
+        tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer On";
             toggle-mode = "on";
         };
 
-         tog_off: toggle_layer_off_only {
+        tog_off: toggle_layer_off_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
