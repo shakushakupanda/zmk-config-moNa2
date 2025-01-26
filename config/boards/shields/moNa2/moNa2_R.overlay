@@ -58,14 +58,6 @@
 //      automouse-layer = <2>;
         scroll-layers = <3>;
 
-        arrows {
-            layer = <1>;
-            bingdings =
-                <&kp RIGHT_ARROW>,
-                <&kp LEFT_ARROW>,
-                <&kp UP_ARROW>,
-                <&kp DOWN_ARROW>;
-            };
     };
 };
 
