@@ -15,6 +15,17 @@
     quick-tap-ms = <200>;
 };
 
+&trackball{
+        arrows {
+            layer = <1>;
+            bingdings =
+                <&kp RIGHT_ARROW>,
+                <&kp LEFT_ARROW>,
+                <&kp UP_ARROW>,
+                <&kp DOWN_ARROW>;
+            };
+};
+
 / {
     combos { compatible = "zmk,combos"; };
 
