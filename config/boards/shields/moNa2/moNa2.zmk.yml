@@ -1,6 +1,6 @@
 file_format: "1"
-id: moNa2
-name: moNa2
+id: conductor
+name: conductor
 type: shield
 url: https://github.com/shakushakupanda/zmk-config-moNa2
 requires: [seeeduino_xiao_ble]
