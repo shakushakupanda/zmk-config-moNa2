@@ -104,7 +104,7 @@
             bindings = <
 &kp ESCAPE                  &kp KP_NUMBER_7  &kp UP_ARROW    &kp KP_NUMBER_9  &kp PLUS                                   &kp CARET         &kp AMPERSAND      &mkp MB3        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp TAB                     &kp LEFT_ARROW   &kp LG(RS(S))   &kp RIGHT_ARROW  &kp ASTERISK               &kp ENTER  &kp EXCLAMATION   &mkp MB1           &mo 3           &mkp MB2              &kp LA(GRAVE)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &BACKSPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LC(SPACE)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &kp BACKSPACE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LC(SPACE)
 &kp LCTRL                   &trans           &trans          &trans           &trans        &trans       &kp ENTER       &kp BACKSPACE                                                              &kp PIPE
             >;
 
