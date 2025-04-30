@@ -162,10 +162,10 @@
 
         mouse_mac {
             bindings = <
-&kp ESCAPE                  &kp KP_NUMBER_7  &kp UP_ARROW              &kp KP_NUMBER_9  &kp PLUS                                   &kp CARET         &kp AMPERSAND      &mkp MB3        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB                     &kp LEFT_ARROW   &kp LG(LC(LS(NUMBER_4)))  &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1           &mo 7           &mkp MB2              &kp LC(SPACE)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW            &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LC(SPACE)
-&kp LCTRL                   &trans           &trans                    &trans           &trans        &trans       &kp ENTER       &kp BACKSPACE                                                              &kp PIPE
+&kp ESCAPE                  &kp LG(Z)       &kp UP_ARROW              &kp LG(C)        &kp PLUS                                   &kp CARET         &kp AMPERSAND      &mkp MB3        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TAB                     &kp LEFT_ARROW  &kp LG(LC(LS(NUMBER_4)))  &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1           &mo 7           &mkp MB2              &kp LC(SPACE)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp LG(A)       &kp DOWN_ARROW            &kp LG(V)        &kp PERIOD    &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LC(SPACE)
+&kp LCTRL                   &trans          &trans                    &trans           &trans        &trans       &kp ENTER       &kp BACKSPACE                                                              &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
