@@ -56,12 +56,12 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_GUI>,
+                <&kp LEFT_GUI &kp RSHIFT>,
                 <&macro_wait_time 20>,
-                <&kp RSHIFT>,
-                <&macro_wait_time 20>,
+                <&macro_tap>,
                 <&kp S>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_GUI &kp RSHIFT>;
 
             label = "SCREENSHOT";
         };
