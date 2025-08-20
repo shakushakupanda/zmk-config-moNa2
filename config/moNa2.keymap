@@ -71,12 +71,12 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_GUI &kp RSHIFT>,
+                <&kp LEFT_ALT>,
                 <&macro_wait_time 20>,
                 <&macro_tap>,
-                <&kp S>,
+                <&kp GRAVE>,
                 <&macro_release>,
-                <&kp LEFT_GUI &kp RSHIFT>;
+                <&kp LEFT_ALT>;
 
             label = "HENKAN";
         };
