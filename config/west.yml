@@ -19,5 +19,8 @@ manifest:
     - name: zmk-rgbled-widget  # <-- new entry
       remote: shakushakupanda
       revision: main
+    - name: zmk-feature-cdc-acm-bootloader-trigger
+      remote: shakushakupanda
+      revision: main
   self:
     path: config
